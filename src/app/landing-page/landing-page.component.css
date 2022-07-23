@@ -1,0 +1,14 @@
+.btn-outline-primary {
+  color: #da1354;
+  border-color: #da1354;
+  background-color: #000000;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+  background-color: #173e2f;
+}
+
+.description-area {
+  color: white;
+}

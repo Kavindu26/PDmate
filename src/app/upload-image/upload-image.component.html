@@ -1,0 +1,85 @@
+<div class="alert alert-danger alert-dismissible fade" role="alert"></div>
+<div class="container">
+  <div class="row my-4 text-center title-row">
+    <div class="col-5 py-4 text-right">
+      <h1>PD</h1>
+    </div>
+    <div class="col-2 px-0">
+      <img class="logo" src="../../assets/Project Logo.png" alt="" srcset="" />
+    </div>
+    <div class="col-5 py-4 text-left">
+      <h1>mate</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="row p-4 form-row">
+        <div class="col-8">
+          <form [formGroup]="fileUploadForm">
+            <div class="custom-file form-group">
+              <input
+                type="file"
+                formControlName="fileSource"
+                class="form-control custom-file-input"
+                id="customFile"
+                (change)="onFileChange($event)"
+              />
+              <label class="custom-file-label" for="customFile"
+                >Choose file</label
+              >
+            </div>
+          </form>
+        </div>
+        <div class="col-4 text-center">
+          <button
+            type="submit"
+            (click)="uploadImage()"
+            class="btn btn-outline-info"
+          >
+            Get Classification
+          </button>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-8 mx-auto text-center">
+          <div
+            *ngIf="isGetClassificationClicked"
+            class="spinner-border text-light"
+            role="status"
+          >
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="classificationLabel !== ''" class="row p-4">
+        <div
+          class="card border-success mb-3 mx-auto"
+          style="max-width: 18rem; background: none"
+        >
+          <div class="card-header bg-transparent border-success text-success">
+            Classification Results
+          </div>
+          <div class="card-body text-success">
+            <h5 class="card-title">
+              Person is
+              <span class="text-warning">{{ classificationLabel }}</span>
+            </h5>
+          </div>
+          <div class="card-footer bg-transparent border-success text-success">
+            Probability:&nbsp;<span class="text-warning"
+              >{{ probability }}%</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 pt-2 text-center img-preview-div">
+      <h6>Preview will be shown here</h6>
+      <img
+        [src]="imageSrc"
+        *ngIf="imageSrc"
+        style="height: 300px; width: 300px"
+      />
+    </div>
+  </div>
+</div>

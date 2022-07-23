@@ -1,0 +1,30 @@
+.img-preview-div {
+  box-shadow: inset 0px 0px 15px 5px rgb(98 98 98);
+  border: 1px solid #d3dedc;
+  height: 25rem;
+  color: #d3dedc;
+}
+
+.form-row {
+  background-color: #ffffff14;
+  -webkit-box-shadow: inset 0px 0px 15px 5px rgb(98 98 98);
+  -moz-box-shadow: inset 0px 0px 15px 5px rgb(98 98 98);
+  box-shadow: inset 0px 0px 15px 5px rgb(98 98 98);
+}
+
+.btn-outline-info {
+  color: #da1354;
+  border-color: #da1354;
+}
+
+.btn-outline-info,
+.btn-outline-info:hover,
+.btn-outline-info:active {
+  background-color: #000000;
+}
+.alert {
+  position: absolute;
+  z-index: 3;
+  width: 50%;
+  margin-left: 25%;
+}

@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+body{
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+i.bi-question-circle{
+    cursor: pointer;
+    float: right;
+    color: #d3dedc;
+    font-size: 2rem;
+    margin-right: 50px;
+}
+.modal-content{
+    background-color: #6c757d;
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+.logo{
+    width: 190px;
+    height: 190px;
+}
+
+.title-row {
+    background:#ffffff14;
+    /* background-color: #D3DEDC;*/
+}
+
+h1{
+    color: #d3dedc;
+    font-size: 100px;
+    text-shadow: 3px 3px 5px purple;
+    background:-webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+}
+
+.about-img > img {
+    width: 235px;
+}
